@@ -1,0 +1,51 @@
+.site_layout_header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    background-color: #ffffff;
+    padding: 0 12px;
+}
+
+.trigger {
+    font-size: 20px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.trigger:hover {
+    background-color: #188fff21;
+}
+
+.user_state {
+    display: flex;
+    align-items: center;
+
+    .action {
+        cursor: pointer;
+        padding: 0 10px;
+        transition: background-color 0.3s;
+
+    }
+
+    .action:hover {
+        background-color: rgba(0, 0, 0, 0.025);
+    }
+
+    .logo {
+        width: 36px;
+        height: 36px;
+
+    }
+
+    span {
+        display: inline-block;
+        margin-left: 6px;
+        user-select: none;
+    }
+
+    .quit {
+        cursor: pointer;
+    }
+}

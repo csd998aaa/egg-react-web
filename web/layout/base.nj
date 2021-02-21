@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        {% if entryMap[entryKey].css %}
+            <link rel="stylesheet" type="text/css" href="/public{{ entryMap[entryKey].css }}">
+        {% endif %}
+    </head>
+    <body>
+
+        {# 页面主体 #}
+        {% block body %}{% endblock %}
+
+        {# 通用JS #}
+        <script></script>
+
+        {# 页面JS #}
+        <script src="/public{{ entryMap[entryKey].js }}"></script>
+    </body>
+</html>

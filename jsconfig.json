@@ -1,0 +1,20 @@
+{
+  "include": [
+    "**/*"
+  ],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "web/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
